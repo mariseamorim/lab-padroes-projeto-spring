@@ -1,8 +1,10 @@
 package one.digitalinnovation.gof.controller;
 
 import one.digitalinnovation.gof.model.Cliente;
-import one.digitalinnovation.gof.service.ClienteService;
+import one.digitalinnovation.gof.service.ClienteService;;
+import org.apache.commons.collections4.IterableUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,13 +23,27 @@ public class ClienteRestController {
     private ClienteService clienteService;
 
     @GetMapping
-    public ResponseEntity<Iterable<Cliente>> buscarTodos() {
-        return ResponseEntity.ok(clienteService.buscarTodos());
+    public ResponseEntity buscarTodos() {
+        try{
+            var lista = clienteService.buscarTodos();
+            if(IterableUtils.size(lista) <= 0){
+                throw new RuntimeException("Ainda não há clientes cadastrados.");
+            }
+            return ResponseEntity.ok(clienteService.buscarTodos());
+
+        }catch (RuntimeException e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+        }
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Cliente> buscarPorId(@PathVariable Long id) {
-        return ResponseEntity.ok(clienteService.buscarPorId(id));
+    public ResponseEntity buscarPorId(@PathVariable Long id) {
+        try{
+            return ResponseEntity.ok(clienteService.buscarPorId(id));
+        }catch (RuntimeException e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+        }
+
     }
 
     @PostMapping

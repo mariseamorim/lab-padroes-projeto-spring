@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71d37fa1-5b71-42de-9e34-b9f44f33e50f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="71d37fa1-5b71-42de-9e34-b9f44f33e50f" name="Changes" comment="estruturando classes do projeto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/gof/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/gof/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/gof/controller/ClienteRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/gof/controller/ClienteRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/gof/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/gof/model/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/gof/model/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/gof/model/Endereco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/gof/repository/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/gof/repository/ClienteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/gof/repository/EnderecoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/gof/repository/EnderecoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/gof/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/gof/service/ClienteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/gof/service/ViaCepService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/gof/service/ViaCepService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/gof/service/impl/ClienteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/gof/service/impl/ClienteServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,13 +39,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/dio/lab-padroes-projeto-spring"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/dio/lab-padroes-projeto-spring&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,6 +55,14 @@
       <option name="presentableId" value="Default" />
       <updated>1669939176034</updated>
     </task>
+    <task id="LOCAL-00001" summary="estruturando classes do projeto">
+      <created>1669981939715</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669981939715</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,5 +75,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="estruturando classes do projeto" />
+    <option name="LAST_COMMIT_MESSAGE" value="estruturando classes do projeto" />
   </component>
 </project>
